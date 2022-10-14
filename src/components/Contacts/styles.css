@@ -1,0 +1,59 @@
+/* Bu dosyayı components/contacts ın altındaki index.js e import etmeliyiz */
+
+
+/* contacts taki index.js deki dive verdiğimiz id containerdı ona stil tanımlaması yapıyoruz*/
+#container{
+    width: 400px;
+    background-color: rgb(158, 196, 227);
+    padding:20px;
+
+}
+
+/* width:100% dediğimizde input kutucuğu enlemesine containerin tamamını kapsayacak */
+/* box-sizing:border-box kutucukla container arasında kalan sağ ve sol boşlukları eşitliyor */
+/* padding ise kutucukların büyüklüğünü ayarlıyor*/
+input {
+    width: 100%;
+    padding:5px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/*list-style-type:none dediğimizde liste elemanlarının başında görünen siyah noktalar olmayacak */
+ul,li {
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+
+/*List componentinin altındaki index.js te ul nin classname ne list dedik,ona stil veriyoruz */
+/* Listedeki isimlerin kutucuklara olan uzaklığına yukarıdan ve aşağıdan 15px lik uzaklık verdik*/
+.list {
+     margin: 15px 0;
+}
+
+/*List componentinin altındaki index.js te list adını verdiğimiz ul nin altındaki li'lere stil veriyoruz  */
+/* yani aslında listeye eklenen isimlerin arka plan rengini paddingini marginini ... özelleştirdik */
+/* justify-content diyerek ismi satır başında telefon numarasını aynı satırsa satır sonunda gösterdik */
+.list > li{
+    background-color: antiquewhite;
+    padding:5px;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Form componentının altındaki index.js teki add butonunun olduğu dive classname olarak btn verdik  */
+/*Add butonunu ortaladık yukarıdan ve aşağıdan 10 px lik uzaklık verdik */
+.btn{
+    display: flex;
+    justify-content:center;
+    margin-top: 5px;
+}
+
+/*Add butonunun içini 5px , genişliğini 60px yaptık*/
+.btn > button {
+    padding:5px;
+    width:60px;
+}
